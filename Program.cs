@@ -4,7 +4,7 @@
     {
         static void Main()
         {
-            string file = "input5.txt";
+            string file = "input.txt";
 
             StreamWriter writer = new StreamWriter("Simantic.txt");  //Открытие файла для записи для того чтобы его очистить
             writer.Close();

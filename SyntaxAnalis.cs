@@ -420,6 +420,10 @@
                 if (symbol == LexicalAnalyzer.lbracket)
                 {
                     symbol = lex.NextSym();
+                    if (symbol == LexicalAnalyzer.intc)
+                    {
+                        SemanticAnalyzer.CheckArrayAccess(varName, lex.nmb_int);
+                    }
                     string indexType = ProcessExpression();
 
                     // Проверка типа индекса (должен быть integer)
